@@ -1,5 +1,5 @@
 {% set name = "AnaCal" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/mr-superonion/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0ebf6f23306d5049d1659c7ec6ee5f85dee5e036ce74542da88b6270d545752f
+  sha256: 86560b3bd154d1fd8cf0433476cc215f39167bd50eb7c1e81e400fe668b8b915
 
 
 build:
   number: 0
-  skip: True  # [py<310 or win]
+  skip: true  # [py<310 or win]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
