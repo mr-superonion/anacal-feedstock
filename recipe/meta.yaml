@@ -34,8 +34,6 @@ requirements:
     - galsim
     - numpy
     - pydantic
-    - jax
-    - jaxlib
 
 test:
   imports:
