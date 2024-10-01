@@ -1,5 +1,6 @@
 {% set name = "AnaCal" %}
 {% set version = "0.4.0" %}
+{% set sha256 = "a0e4aa5b99ab6528add1a94368821311caff775c6ee4928d05ff2d6450bd94b3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mr-superonion/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 86560b3bd154d1fd8cf0433476cc215f39167bd50eb7c1e81e400fe668b8b915
+  sha256: {{ sha256 }}
 
 
 build:
