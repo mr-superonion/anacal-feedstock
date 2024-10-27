@@ -34,7 +34,7 @@ requirements:
     - galsim
     - numpy
     - pydantic
-    - matplotlib-base
+    - matplotlib
 
 test:
   imports:
